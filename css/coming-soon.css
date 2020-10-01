@@ -30,25 +30,132 @@ h2 {
   max-width: 350px;
 }
 
-
-.masthead {
-  overflow: hidden;
-  padding-bottom: 3rem;
-  z-index: 2;
+@media (min-width: 100px) and (max-width: 575px) {
+  .masthead {
+    padding-bottom: 0.3rem;
+  }
+  .masthead .masthead-bg {
+    background-image: url("https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_650/v1595585944/background-mobile.png");
+  }
+  .masthead .masthead-content {
+    padding-bottom: 1rem !important;
+  }
+  .masthead .masthead-content img {
+    max-width: 155px !important;
+    width: 155px !important;
+    margin-top: -2rem;
+  }
+  .masthead .masthead-content h1 {
+    margin-top: 12rem;
+    font-size: 22px;
+    max-width: 300px;
+  }
+  .masthead .masthead-content h2 {
+    font-size: 17px;
+    max-width: 300px;
+  }
+  .masthead .masthead-content .input-group {
+    flex-direction: column;
+    margin-top: unset;
+  }
+  .masthead .masthead-content .input-group-newsletter input {
+    padding: 0.6rem;
+    width: 100%;
+    border-radius: 5px;
+    border: unset;
+  }
+  .masthead .masthead-content .input-group-newsletter button {
+    margin-top: 10px;
+    padding: 0.6rem;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .social-icons ul {
+    margin-top: 0;
+  }
+  .social-icons ul li a {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  .follow-us {
+    bottom: 0rem;
+    left: 0.7rem;
+    width: 189px;
+    text-align: left;
+    padding-bottom: 2px;
+  }
+  .instagram-link {
+    padding-left: 7rem;
+  }
 }
 
-.masthead .masthead-bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  min-height: 35rem;
-  height: 100%;
-  background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_1400/v1595585944/background-desktop.png');
-  background-size: cover;
-  background-position: bottom;
+@media (min-width: 575px) and (max-width: 767px) {
+  .container {
+    margin: unset;
+    padding-left: 2rem;
+  }
+  .masthead {
+    padding-bottom: 0.3rem;
+  }
+  .masthead .masthead-bg {
+    background-position: top;
+    background-image: url("https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_800/v1595585944/background-tablet.png");
+  }
+  .masthead .masthead-content {
+    padding-bottom: 1rem !important;
+  }
+  .masthead .masthead-content img {
+    max-width: 230px !important;
+    width: 230px !important;
+    margin-top: -1rem;
+  }
+  .masthead .masthead-content h1 {
+    margin-top: 11rem;
+    font-size: 27px;
+    max-width: 260px;
+  }
+  .masthead .masthead-content h2 {
+    font-size: 18px;
+    max-width: 260px;
+  }
+  .masthead .masthead-content .input-group {
+    flex-direction: column;
+    margin-top: unset;
+  }
+  .masthead .masthead-content .input-group-newsletter input {
+    padding: 0.6rem 1rem;
+    width: 300px;
+    border-radius: 5px;
+    border: unset;
+  }
+  .masthead .masthead-content .input-group-newsletter button {
+    margin-top: 10px;
+    padding: 0.6rem 1rem;
+    width: auto;
+    border-radius: 5px;
+  }
+  .social-icons {
+    right: 3.4rem;
+    bottom: 1rem;
+    width: unset;
+  }
+  .social-icons ul {
+    margin-top: 0;
+  }
+  .social-icons ul li a {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  .follow-us {
+    bottom: 3rem;
+    margin-bottom: 1rem;
+    right: unset;
+    width: unset;
+  }
 }
 
 .masthead .masthead-content h1 {
@@ -126,13 +233,13 @@ h2 {
   text-align: center;
 }
 
-.social-icons ul > li {
+.social-icons ul li {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
   display: inline-block;
 }
 
-.social-icons ul > li > a {
+.social-icons ul li a {
   display: block;
   color: #235B6A;
   background-color: white;
@@ -143,7 +250,7 @@ h2 {
   width: 4rem;
 }
 
-.social-icons ul > li > a:hover {
+.social-icons ul li a:hover {
   color: #A5CAD0 !important;
   background-color: white !important;
   border-radius: 100%;
@@ -165,154 +272,24 @@ h2 {
     margin-top: 0;
     width: auto;
   }
-  .social-icons ul > li {
+  .social-icons ul li {
     display: block;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 1rem;
   }
-  .social-icons ul > li:last-child {
-    margin-bottom: 0;
-  }
-  .social-icons ul > li > a {
+  .social-icons ul li a {
     transition: all 0.2s ease-in-out;
     font-size: 2rem;
     line-height: 4rem;
     height: 4rem;
     width: 4rem;
   }
-  .social-icons ul > li > a:hover {
+  .social-icons ul li a:hover {
     background-color: #002E66;
   }
-}
-
-@media (min-width: 100px) and (max-width: 575px) {
-  .masthead {
-    padding-bottom: 0.3rem;
-  }
-  .masthead .masthead-content {
-    padding-bottom: 1rem !important;
-  }
-  .masthead .masthead-content img {
-    max-width: 155px !important;
-    width: 155px !important;
-    margin-top: -2rem;
-  }
-  .masthead .masthead-content h1 {
-    margin-top: 12rem;
-    font-size: 22px;
-    max-width: 300px;
-  }
-  .masthead .masthead-content h2 {
-    font-size: 17px;
-    max-width: 300px;
-  }
-  .masthead .masthead-content .input-group {
-    flex-direction : column;
-    margin-top: unset;
-  }
-  .masthead .masthead-content .input-group-newsletter input {
-    padding: 0.6rem;
-    width: 100%;
-    border-radius: 5px;
-    border: unset;
-  }
-
-  .masthead .masthead-content .input-group-newsletter button {
-    margin-top: 10px;
-    padding: 0.6rem;
-    width: 100%;
-    border-radius: 5px;
-  }
-  .masthead .masthead-bg {
-    background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_650/v1595585944/background-mobile.png');
-  }
-  .social-icons ul {
-    margin-top: 0;
-  }
-  .social-icons ul > li > a {
-    font-size: 1.7rem;
-    line-height: 3rem;
-    height: 3rem;
-    width: 3rem;
-  }
-  .follow-us {
-    bottom: 0rem;
-    left: 0.7rem;
-    width: 189px;
-    text-align: left;
-    padding-bottom: 2px;
-  }
-  .instagram-link {
-    padding-left: 7rem;
-  }
-}
-
-@media (min-width: 575px) and (max-width: 767px) {
-  .masthead .masthead-bg {
-    background-position: top;
-    background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_800/v1595585944/background-tablet.png');
-  }
-  .container {
-    margin: unset;
-    padding-left: 2rem;
-  }
-  .masthead {
-    padding-bottom: 0.3rem;
-  }
-  .masthead .masthead-content {
-    padding-bottom: 1rem !important;
-  }
-  .masthead .masthead-content img {
-    max-width: 230px !important;
-    width: 230px !important;
-    margin-top: -1rem;
-  }
-  .masthead .masthead-content h1 {
-    margin-top: 11rem;
-    font-size: 27px;
-    max-width: 260px;
-  }
-  .masthead .masthead-content h2 {
-    font-size: 18px;
-    max-width: 260px;
-  }
-  .masthead .masthead-content .input-group {
-    flex-direction : column;
-    margin-top: unset;
-  }
-  .masthead .masthead-content .input-group-newsletter input {
-    padding: 0.6rem 1rem;
-    width: 300px;
-    border-radius: 5px;
-    border: unset;
-  }
-
-  .masthead .masthead-content .input-group-newsletter button {
-    margin-top: 10px;
-    padding: 0.6rem 1rem;
-    width: auto;
-    border-radius: 5px;
-  }
-  .social-icons {
-    right: 3.4rem;
-    bottom: 1rem;
-    width: unset;
-  }
-  .social-icons ul {
-    margin-top: 0;
-  }
-  .social-icons ul > li > a {
-    font-size: 1.7rem;
-    line-height: 3rem;
-    height: 3rem;
-    width: 3rem;
-  }
-  .follow-us {
-    bottom: 3rem;
-    margin-bottom: 1rem;
-    right: unset;
-    width: unset;
+  .social-icons ul li:last-child {
+    margin-bottom: 0;
   }
 }
 

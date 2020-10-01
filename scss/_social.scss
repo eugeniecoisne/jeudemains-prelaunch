@@ -3,18 +3,28 @@
   margin-bottom: 2rem;
   width: 100%;
   z-index: 2;
+
   ul {
     margin-top: 2rem;
     width: 100%;
     text-align: center;
-    > li {
-      margin-left: 1rem;
-      margin-right: 1rem;
+    li {
+      margin-left: 0.3rem;
+      margin-right: 0.3rem;
       display: inline-block;
-      > a {
+      a {
         display: block;
-        color: white;
-        background-color: fade-out($primary, 0.2);
+        color: #235B6A;
+        background-color: white;
+        border-radius: 100%;
+        font-size: 2rem;
+        line-height: 4rem;
+        height: 4rem;
+        width: 4rem;
+      }
+      a:hover {
+        color: #A5CAD0 !important;
+        background-color: white !important;
         border-radius: 100%;
         font-size: 2rem;
         line-height: 4rem;
@@ -25,34 +35,35 @@
   }
 }
 
+
 @media (min-width: 768px) {
   .social-icons {
     margin: 0;
     position: absolute;
-    right: 2.5rem;
+    right: 7.5rem;
     bottom: 2rem;
     width: auto;
     ul {
       margin-top: 0;
       width: auto;
-      > li {
+      li {
         display: block;
         margin-left: 0;
         margin-right: 0;
-        margin-bottom: 2rem;
-        &:last-child {
-          margin-bottom: 0;
-        }
-        > a {
+        margin-bottom: 1rem;
+        a {
           transition: all 0.2s ease-in-out;
           font-size: 2rem;
           line-height: 4rem;
           height: 4rem;
           width: 4rem;
-          &:hover {
-            background-color: $primary;
-          }
         }
+        a:hover {
+          background-color: #002E66;
+        }
+      }
+      li:last-child {
+        margin-bottom: 0;
       }
     }
   }

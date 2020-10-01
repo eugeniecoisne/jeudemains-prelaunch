@@ -1,0 +1,142 @@
+@media (min-width: 100px) and (max-width: 575px) {
+  .masthead {
+    padding-bottom: 0.3rem;
+    .masthead-bg {
+      background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_650/v1595585944/background-mobile.png');
+    }
+    .masthead-content {
+      padding-bottom: 1rem !important;
+      img {
+        max-width: 155px !important;
+        width: 155px !important;
+        margin-top: -2rem;
+      }
+      h1 {
+        margin-top: 12rem;
+        font-size: 22px;
+        max-width: 300px;
+      }
+      h2 {
+        font-size: 17px;
+        max-width: 300px;
+      }
+      .input-group {
+        flex-direction : column;
+        margin-top: unset;
+      }
+      .input-group-newsletter {
+        input {
+          padding: 0.6rem;
+          width: 100%;
+          border-radius: 5px;
+          border: unset;
+        }
+        button {
+          margin-top: 10px;
+          padding: 0.6rem;
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+
+  .social-icons {
+    ul {
+      margin-top: 0;
+      li {
+        a {
+          font-size: 1.7rem;
+          line-height: 3rem;
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
+  }
+  .follow-us {
+    bottom: 0rem;
+    left: 0.7rem;
+    width: 189px;
+    text-align: left;
+    padding-bottom: 2px;
+  }
+  .instagram-link {
+    padding-left: 7rem;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .container {
+    margin: unset;
+    padding-left: 2rem;
+  }
+  .masthead {
+    padding-bottom: 0.3rem;
+    .masthead-bg {
+      background-position: top;
+      background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_800/v1595585944/background-tablet.png');
+    }
+    .masthead-content {
+      padding-bottom: 1rem !important;
+      img {
+        max-width: 230px !important;
+        width: 230px !important;
+        margin-top: -1rem;
+      }
+      h1 {
+        margin-top: 11rem;
+        font-size: 27px;
+        max-width: 260px;
+      }
+      h2 {
+        font-size: 18px;
+        max-width: 260px;
+      }
+      .input-group {
+        flex-direction : column;
+        margin-top: unset;
+      }
+      .input-group-newsletter {
+        input {
+          padding: 0.6rem 1rem;
+          width: 300px;
+          border-radius: 5px;
+          border: unset;
+        }
+        button {
+          margin-top: 10px;
+          padding: 0.6rem 1rem;
+          width: auto;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+
+  .social-icons {
+    right: 3.4rem;
+    bottom: 1rem;
+    width: unset;
+    ul {
+      margin-top: 0;
+      li {
+        a {
+          font-size: 1.7rem;
+          line-height: 3rem;
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+
+    }
+  }
+  .follow-us {
+    bottom: 3rem;
+    margin-bottom: 1rem;
+    right: unset;
+    width: unset;
+  }
+}
