@@ -3,7 +3,6 @@
 // Load plugins
 const autoprefixer = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();
-const cleanCSS = require("gulp-clean-css");
 const del = require("del");
 const gulp = require("gulp");
 const header = require("gulp-header");
@@ -67,31 +66,6 @@ function modules() {
   return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery);
 }
 
-// CSS task
-function css() {
-  return gulp
-    .src("./scss/**/*.scss")
-    .pipe(plumber())
-    .pipe(sass({
-      outputStyle: "expanded",
-      includePaths: "./node_modules",
-    }))
-    .on("error", sass.logError)
-    .pipe(autoprefixer({
-      cascade: false
-    }))
-    .pipe(header(banner, {
-      pkg: pkg
-    }))
-    .pipe(gulp.dest("./css"))
-    .pipe(rename({
-      suffix: ".min"
-    }))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest("./css"))
-    .pipe(browsersync.stream());
-}
-
 // JS task
 function js() {
   return gulp
@@ -112,7 +86,6 @@ function js() {
 
 // Watch files
 function watchFiles() {
-  gulp.watch("./scss/**/*", css);
   gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
@@ -123,7 +96,6 @@ const build = gulp.series(vendor, gulp.parallel(css, js));
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 // Export tasks
-exports.css = css;
 exports.js = js;
 exports.clean = clean;
 exports.vendor = vendor;
